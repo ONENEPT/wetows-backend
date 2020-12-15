@@ -1,0 +1,8 @@
+{
+  "env": {
+    "MONGO_PASSWORD": "test123",
+    "JWT_KEY": "gdhdhjd8eewekdhds8d8sd7s7s8d7s",
+    "MONGO_USER": "test-user",
+    "MONGO_DEFAULT_DATABASE": "test?retryWrites=true&w=majority"
+  }
+}

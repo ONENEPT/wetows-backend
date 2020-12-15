@@ -1,0 +1,85 @@
+{
+  "name": "EdukoLab",
+  "version": "0.0.1",
+  "description": "An educational app...",
+  "keywords": [
+    "js-starter",
+    "boilerplate"
+  ],
+  "private": false,
+  "main": "src/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cover": "jest --coverage",
+    "lint": "eslint \"src/**/*.js\"",
+    "start": "pm2 start ecosystem.config.json --no-daemon",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js"
+  },
+  "author": {
+    "name": "Build For SDG",
+    "email": "buildforsdg@andela.com"
+  },
+  "homepage": "https://github.com/BuildForSDG/js-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BuildForSDG/js-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BuildForSDG/js-starter/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "17.1.1",
+    "bcrypt": "^4.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "compression": "1.7.4",
+    "cors": "2.8.5",
+    "cross-env": "7.0.2",
+    "custom-env": "2.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "2.0.0",
+    "express-rate-limit": "5.1.3",
+    "express-validator": "^6.4.1",
+    "helmet": "3.22.0",
+    "http-status": "1.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "4.17.15",
+    "moment": "2.26.0",
+    "mongoose": "^5.9.14",
+    "moongoose": "0.0.5",
+    "morgan": "^1.10.0",
+    "nodemailer": "6.4.8",
+    "passport": "0.4.1",
+    "passport-jwt": "4.0.0",
+    "pm2": "4.4.0",
+    "validator": "13.0.0",
+    "winston": "3.2.1",
+    "xss-clean": "0.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.4.0",
+    "coveralls": "3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "husky": "4.2.5",
+    "jest": "^25.4.0",
+    "nodemon": "^2.0.4",
+    "parcel-bundler": "^1.12.4"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
